@@ -1,0 +1,25 @@
+# A small B2B SaaS product: modest traffic, small team, tight budget.
+name: Acme Projects
+summary: Project tracking for small teams, with a web app, a public API and email notifications.
+capabilities: [web_ui, public_api, auth, notifications, file_storage, search]
+workload:
+  users: 20000
+  peak_rps: 120
+  avg_payload_kb: 15
+  read_ratio: 0.85
+  data_gb: 200
+  growth_per_year: 1.0
+nfr:
+  availability_pct: 99.9
+  p95_latency_ms: 400
+  rpo_minutes: 15
+  rto_minutes: 120
+  regions: 1
+data:
+  classification: internal
+  pii: true
+  regulations: [gdpr]
+constraints:
+  cloud: aws
+  team_size: 6
+  monthly_budget_usd: 2500

@@ -1,0 +1,8 @@
+# Override catalogue prices with your negotiated rates. Any subset of fields per component kind.
+# Fields: base_monthly, per_replica_monthly, per_million_requests, per_gb_month (all USD).
+prices:
+  compute:
+    per_replica_monthly: 58
+  database:
+    per_replica_monthly: 150
+    per_gb_month: 0.10

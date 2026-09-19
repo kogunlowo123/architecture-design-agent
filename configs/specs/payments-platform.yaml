@@ -1,0 +1,25 @@
+# A payment processing platform: high availability, strict compliance, real-time and async work.
+name: Payments Platform
+summary: Card payments API for merchants with settlement reporting and fraud scoring.
+capabilities: [public_api, payments, auth, async_jobs, realtime, analytics, ml_inference, notifications]
+workload:
+  users: 5000
+  peak_rps: 2500
+  avg_payload_kb: 4
+  read_ratio: 0.5
+  data_gb: 5000
+  growth_per_year: 2.0
+nfr:
+  availability_pct: 99.99
+  p95_latency_ms: 250
+  rpo_minutes: 0
+  rto_minutes: 10
+  regions: 2
+data:
+  classification: restricted
+  pii: true
+  regulations: [pci_dss, gdpr, soc2]
+constraints:
+  cloud: gcp
+  team_size: 40
+  monthly_budget_usd: 120000

@@ -1,0 +1,26 @@
+# A patient portal handling protected health information.
+name: Patient Portal
+summary: Patients view results, book appointments and message clinicians.
+capabilities: [web_ui, public_api, auth, notifications, file_storage, third_party_integrations]
+workload:
+  users: 150000
+  peak_rps: 400
+  avg_payload_kb: 30
+  read_ratio: 0.75
+  data_gb: 2000
+  growth_per_year: 0.4
+nfr:
+  availability_pct: 99.95
+  p95_latency_ms: 300
+  rpo_minutes: 5
+  rto_minutes: 60
+  regions: 2
+data:
+  classification: restricted
+  pii: true
+  regulations: [hipaa, soc2]
+  residency: [us]
+constraints:
+  cloud: azure
+  team_size: 25
+  monthly_budget_usd: 30000
