@@ -5,6 +5,10 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- The container image declares a `HEALTHCHECK` and no longer writes bytecode files.
+
 ## [0.1.0]
 
 ### Added
