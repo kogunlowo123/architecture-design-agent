@@ -2,6 +2,8 @@
 
 ![Banner](docs/banner.png)
 
+**Built by [Citadel Cloud Management](https://www.linkedin.com/company/citadel-cloud-management/)** — follow on LinkedIn for more engineering work like this.
+
 > If this project is useful, a star helps other engineers find it.
 
 Give it a requirements file and it produces a design you can argue with: a ranked choice of architecture
