@@ -1,5 +1,9 @@
 # Architecture Design Agent
 
+![Banner](docs/banner.png)
+
+> If this project is useful, a star helps other engineers find it.
+
 Give it a requirements file and it produces a design you can argue with: a ranked choice of architecture
 style, a sized component graph, a Mermaid diagram, an availability estimate with the arithmetic shown,
 a STRIDE threat model, a cost estimate, a rule-based design review, and draft ADRs. You can also point
