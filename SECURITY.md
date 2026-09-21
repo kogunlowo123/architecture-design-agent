@@ -34,7 +34,7 @@ requirements first. You can expect an acknowledgement within 3 business days and
 | Path traversal in output names | File names come from a slug of the design name, written inside the chosen directory | `render.write_outputs` |
 | Prompt injection into summaries | The model sees only aggregate counts. Free text and names are never sent. Output with numbers absent from the facts is discarded | `agents/summary.py` |
 | Secret leakage | API keys are `SecretStr`. Errors and logs are redacted | `config.py`, `logging_setup.py` |
-| Vulnerable dependencies | `pip-audit`, Dependabot, CodeQL | `.github/` |
+| Vulnerable dependencies | `pip-audit`, CodeQL | `.github/` |
 
 ## Known limits
 
